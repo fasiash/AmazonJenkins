@@ -1,5 +1,6 @@
 package PageObject;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.awt.Desktop;
@@ -86,7 +87,8 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		} else {
 			test.fail("User unable to launch Amazon Website");
 			test.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			//assertFalse(true);
+			assertFalse(true);
 		}
 
 	}
@@ -113,7 +115,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test1.fail("User unable to login into the Amazon Account"+e.getMessage());
 			test1.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
@@ -140,7 +142,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test2.fail("User unable to login into the Amazon Account"+e.getMessage());
 			test2.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
@@ -188,7 +190,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test3.fail("Unable to add Watch to the Cart"+e.getMessage());
 			test3.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
@@ -229,7 +231,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test4.fail("Unable to add Mobile to the Cart"+e.getMessage());
 			test4.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
@@ -271,7 +273,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test5.fail("Unable to add Boat Speaker to the Cart"+e.getMessage());
 			test5.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
@@ -290,7 +292,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 			if(cart4.getText().contains("Added to Cart")) {
 				test6.fail("Selected products are unable to removed");
 				test6.addScreenCaptureFromPath(capturescreenshot(driver));
-				assertTrue(false);
+				assertFalse(true);
 			}
 		}catch (Exception e) {
 			test6.pass("Selected products are removed from the cart");
@@ -310,7 +312,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		catch (Exception e) {
 			test7.fail("Unable to checkout the selected products"+e.getMessage());
 			test7.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 	public void Return_to_cart() throws Exception {
@@ -326,7 +328,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		}catch (Exception e) {
 			test8.fail("Your cart is not empty"+e.getMessage());
 			test8.addScreenCaptureFromPath(capturescreenshot(driver));
-			assertTrue(false);
+			assertFalse(true);
 		}
 	}
 
