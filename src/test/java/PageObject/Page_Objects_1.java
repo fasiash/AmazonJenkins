@@ -5,6 +5,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.awt.Desktop;
 import java.io.File;
+import java.net.URI;
 import java.time.Duration;
 import java.util.Set;
 import org.apache.commons.io.FileUtils;
@@ -53,7 +54,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 	ExtentReports ext;
 	ExtentSparkReporter SparkReporter;
 	SoftAssert softassert=new SoftAssert();
-	ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
+	ExtentSparkReporter spark = new ExtentSparkReporter("target/AmazonReport.html");
 
 	public void ExtentReportSetup() {
 		ext=new ExtentReports();
@@ -341,7 +342,8 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 	public void teardown() throws Exception {
 		ext.flush();
-		Desktop.getDesktop().browse(new File("Spark.html").toURI());        
+		//Desktop.getDesktop().browse(new File(spark).toURI());
+		Desktop.getDesktop().browse(new File("AmazonReport.html").toURI());        
 	}
 
 	public static String capturescreenshot(WebDriver driver) throws Exception {
