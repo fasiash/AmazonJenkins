@@ -85,7 +85,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 		if(main_page.getText().contains("Hello, sign in")) {
 			test.pass("User successfully launched to Amazon Website");
-			Assert.assertTrue(true);
+			
 		} else {
 			test.fail("User unable to launch Amazon Website");
 			test.addScreenCaptureFromPath(capturescreenshot(driver));
@@ -112,13 +112,12 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 			if(user_details.getText().contains("Deliver to")) {
 				test1.pass("User successfully login in to the Amazon Account");
-				Assert.assertTrue(true);
 			}
 		}
 		catch (Exception e) {
 			test1.fail("User unable to login into the Amazon Account"+e.getMessage());
 			test1.addScreenCaptureFromPath(capturescreenshot(driver));
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -140,13 +139,12 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 			if(user_details.getText().contains("Delive")) {
 				test2.pass("User successfully login in to the Amazon Account");
-				Assert.assertTrue(true);
 			}
 		}
 		catch (Exception e) {
 			test2.fail("User unable to login into the Amazon Account"+e.getMessage());
 			test2.addScreenCaptureFromPath(capturescreenshot(driver));
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
