@@ -18,7 +18,9 @@ public class WebElement_xpaths {
 	By watch				= By.xpath("//img[@alt='Sponsored Ad - Fire-Boltt Quantum Luxury Stainless Steel Design 1.28\" Bluetooth "
 			+ "Calling Smartwatch with High Resolution of...']");
 	By Quantity				= By.xpath("//select[@id='quantity']");
-	By Add_to_cart_btn		= By.id("add-to-cart-button");
+	By Add_to_cart_btn		= By.xpath("(//input[@id='add-to-cart-button'])[2]");
+	By Add_to_cart_btn1		= By.xpath("//input[@id='add-to-cart-button']");
+	//By Add_to_cart_btn		= By.id("add-to-cart-button");
 	By Added_to_cart_text	= By.xpath("//div[@id = 'attachDisplayAddBaseAlert']/div/h4[. = 'Added to Cart']");
 	By Cross_button			= By.id("attach-close_sideSheet-link");
 	By mobiles_tab			= By.xpath("//a[.='Mobiles']");

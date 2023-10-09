@@ -264,7 +264,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 			}
 			driver.findElement(a.Add_to_cart_btn).click();
 			Thread.sleep(3000);
-			WebElement cart3 = driver.findElement(a.Added_to_cart_text);
+			WebElement cart3 = driver.findElement(a.Add_to_cart_btn1);
 			if(cart3.getText().contains("Added to Cart")) {
 				test5.pass("Boat Speaker added to the cart successfully");
 				driver.findElement(a.Cross_button).click();
