@@ -70,8 +70,8 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions opt = new ChromeOptions();
         //options.setBrowserVersion("117.0.5938.92");
-        opt.addArguments("headless");
-        opt.addArguments("disable-gpu");
+       // opt.addArguments("headless");
+       // opt.addArguments("disable-gpu");
         driver = new ChromeDriver(opt);
 		//WebDriverManager.chromedriver().setup();
 		//driver = new ChromeDriver();
@@ -341,7 +341,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 	public void teardown() throws Exception {
 		ext.flush();
-	//	Desktop.getDesktop().browse(new File("AmazonReport.html").toURI());        
+		Desktop.getDesktop().browse(new File("Spark.html").toURI());        
 	}
 
 	public static String capturescreenshot(WebDriver driver) throws Exception {
