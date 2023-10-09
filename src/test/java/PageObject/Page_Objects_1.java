@@ -329,7 +329,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 		}catch (Exception e) {
 			test8.fail("Your cart is not empty"+e.getMessage());
 			test8.addScreenCaptureFromPath(capturescreenshot(driver));
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
