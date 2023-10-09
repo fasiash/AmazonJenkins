@@ -80,11 +80,11 @@ public class TestCases_1 extends Page_Objects_1 {
 	
 		}
 
-	//@AfterSuite
-	//public void teardown1() throws Exception {
-//
-	//	poa.teardown();
-	//}
+	@AfterSuite
+	public void teardown1() throws Exception {
+
+		poa.teardown();
+	}
 
 
 }
