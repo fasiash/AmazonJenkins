@@ -341,7 +341,7 @@ public class Page_Objects_1 extends ExcelUtility_Amazon{
 
 	public void teardown() throws Exception {
 		ext.flush();
-		Desktop.getDesktop().browse(new File("AmazonReport.html").toURI());        
+	//	Desktop.getDesktop().browse(new File("AmazonReport.html").toURI());        
 	}
 
 	public static String capturescreenshot(WebDriver driver) throws Exception {
